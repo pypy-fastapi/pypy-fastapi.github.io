@@ -385,6 +385,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-a-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making a Website
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#books" class="md-nav__link">
+    <span class="md-ellipsis">
+      Books
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -400,6 +444,22 @@
 
 
 <div><h1 id="welcome-to-fastapi">Welcome to Fastapi</h1>
+<p>FastAPI is a modern, fast (high-performance) web framework for building APIs with Python <code>3.6+</code> based on standard Python type hints.</p>
+<ul>
+<li>Sebastián Ramírez, creator of FastAPI</li>
+</ul>
+<details class="success" open="open">
+<summary>A FastAPI Application</summary>
+<ul>
+<li>The <a href="https://fastapi.tiangolo.com">FastAPI</a> framework: <code>pip install fastapi</code></li>
+<li>The <a href="https://www.uvicorn.org">Uvicorn</a> web server: <code>pip install uvicorn</code></li>
+<li>The <a href="https://httpie.io">HTTPie</a> text web client: <code>pip install httpie</code></li>
+<li>The <a href="https://requests.readthedocs.io">Requests</a> synchronous web client package: <code>pip install requests</code></li>
+<li>The <a href="https://www.python-httpx.org">HTTPX</a> synchronous/asynchronous web client package: <code>pip install httpx</code></li>
+</ul>
+<p>Although <a href="https://curl.se">curl</a> is the best known text web client, I think HTTPie is easier to use. Also, it defaults to JSON encoding and decoding, which is a better match for FastAPI.</p>
+</details>
+<hr>
 <details class="tip" open="open">
 <summary>Identify the Core 20% of FastAPI</summary>
 <p>FastAPI is a Python framework for building APIs quickly with high performance. The critical 20% of FastAPI to learn includes:</p>
@@ -411,7 +471,47 @@
 <li><strong>Async/Await</strong>: Grasp asynchronous programming to leverage FastAPI’s performance (e.g., <code>async def</code> for endpoints).</li>
 </ul>
 </details>
-<hr></div>
+<hr>
+<p><strong>Normal Python execution is synchronous</strong>: one thing at a time, in the order specified by the code. Sometimes we want to be asynchronous: do a little of one thing, then a little of another thing, back to the first thing, and so on. If all our code uses the CPU to calculate things (CPU bound), there’s really no spare time to be asynchronous. But if we perform something that makes the CPU wait for an external thing to complete (I/O bound), we can be asynchronous.</p>
+<p class="annotate"><strong>Asynchronous systems provide an event loop</strong>: requests for slow operations are sent and noted, but we don’t hold up the CPU waiting for their responses. Instead, some immediate processing is done on each pass through the loop, and any responses that came in during that time are handled in the next pass.(1)</p>
+<ol>
+<li>FastAPI - Modern Python Web Development by Bill Lubanovic, pg-8</li>
+</ol>
+<hr>
+<h2 id="status-code">Status Code</h2>
+<p><mark>By default</mark>, FastAPI returns a <code>200</code> status code; exceptions raise <code>4xx</code> codes.</p>
+<hr>
+<h2 id="automated-documentation">Automated Documentation</h2>
+<p>Convince your browser to visit the URL <code>http://localhost:8000/docs</code>.</p>
+<p><strong>Where did that come from?</strong></p>
+<p>FastAPI generates an OpenAPI specification from your code, and includes this page to display and test all your endpoints. This is just one ingredient of its secret sauce.</p>
+<hr>
+<h2 id="making-a-website">Making a Website</h2>
+<p>The full service will have three layers, as I’ve discussed earlier:</p>
+<ul>
+<li><strong>Web</strong> : The web interface</li>
+<li><strong>Service</strong> : The business logic</li>
+<li><strong>Data</strong> : The precious DNA of the whole thing</li>
+</ul>
+<p>Plus the web service will have these cross-layer components:</p>
+<ul>
+<li><strong>Model</strong> : Pydantic data definitions</li>
+<li><strong>Tests</strong> : Unit, integration, and end-to-end tests</li>
+</ul>
+<details class="tip" open="open">
+<summary>Interlude: Top-Down, Bottom-Up, Middle-Out?</summary>
+<p>When designing a website, you could start from one of the following:</p>
+<ul>
+<li>The Web layer and work down</li>
+<li>The Data layer and work up</li>
+<li>The Service layer and work out in both directions</li>
+</ul>
+<p>Do you already have a database, installed and loaded with data, and are just pining for a way to share it with the world? If so, you may want to tackle the Data layer’s code and tests first, then the Service layer, and write the Web layer last.</p>
+<p>If you’re following <a href="#">domain-driven design</a>, you might start in the middle Service layer, defining your core entities and data models. Or you may want to evolve the web interface first, and fake calls to the lower layers until you know what you’ll expect of them.</p>
+</details>
+<hr>
+<h2 id="books">Books</h2>
+<p><a class="glightbox" href="https://learning.oreilly.com/library/cover/9781098135492/250w/" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="FastAPI by Bill Lubanovic " src="https://learning.oreilly.com/library/cover/9781098135492/250w/"></a></p></div>
 
 
 
