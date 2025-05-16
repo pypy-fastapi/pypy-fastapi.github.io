@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://pypy-fastapi.github.io/pydantic/overview/">
       
       
-        <link rel="prev" href="../../type-hinting/overview/">
+        <link rel="prev" href="../../type-hinting/typing-module/">
       
       
       
@@ -526,6 +526,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../type-hinting/typing-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Typing Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -730,17 +753,23 @@
 
 
 <div><h1 id="pydantic">Pydantic</h1>
-<p>Pydantic is a data validation library labeled on its website as the most widely used data validation library for Python.</p>
+<p>Pydantic is a <strong>data validation</strong> <mark>library</mark> labeled on its website as the most widely used data validation library for Python.</p>
 <p>It allows you to model your data in a granular way and perform various types of validation while being firmly rooted in the Python type hinting system. The actual version, V2, has critical parts of the code rewritten in Rust for speed and allows for an excellent developer experience.</p>
 <details class="quote" open="open">
 <summary>Quote</summary>
 <p>FastAPI <mark>is standing on the shoulders of two powerful Python libraries</mark> — <a href="#">Starlette</a> and <a href="#">Pydantic</a>.</p>
-<p>While <strong>Starlette</strong> takes care of the web-related aspects of the framework, often through thin wrappers and utility functions and classes provided by FastAPI, <strong>Pydantic</strong> is responsible for FastAPI’s phenomenal developer experience.</p>
+<p>While <a href="#">Starlette</a> takes care of the <strong>web-related aspects of the framework</strong>, often through thin wrappers and utility functions and classes provided by FastAPI, <a href="#">Pydantic</a> is responsible for FastAPI’s phenomenal developer experience.</p>
 <p>Pydantic is fundamental to FastAPI, and leveraging its powerful capabilities opens up the playing field for all <mark>FARM stack developers</mark>.</p>
 </details>
 <hr>
 <h2 id="pydantic-basics">Pydantic basics</h2>
-<p>Unlike some other libraries that provide similar functionality (such as dataclasses), Pydantic provides a base model (aptly named <code>BaseModel</code>) that enables the parsing and validation functionality through inheritance.</p>
+<p>Unlike some other libraries that provide similar functionality (such as <code>dataclasses</code>), Pydantic provides a base model (aptly named <code>BaseModel</code>) that enables the parsing and validation functionality through inheritance.</p>
+<p>Besides pure data validation, Pydantic provides other important functionalities to your application. Some of the most widely used operations with Pydantic models are the following:</p>
+<ul>
+<li><strong>Data deserialization</strong>: Ingesting data into the model</li>
+<li><strong>Data serialization</strong>: Outputting validated data from the model into Python data structures or JSON</li>
+<li><strong>Data modification</strong>: Sanitizing or modifying data on the fly</li>
+</ul>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
@@ -781,7 +810,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../type-hinting/overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+          <a href="../../type-hinting/typing-module/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Typing Module">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -791,7 +820,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Overview
+                Typing Module
               </div>
             </div>
           </a>
