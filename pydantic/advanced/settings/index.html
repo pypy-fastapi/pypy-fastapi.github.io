@@ -8,24 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://pypy-fastapi.github.io/">
+        <link rel="canonical" href="https://pypy-fastapi.github.io/pydantic/advanced/settings/">
       
       
+        <link rel="prev" href="../../concepts/serialization/">
       
       
-      <link rel="icon" href="assets/logo/favicon.png">
+        <link rel="next" href="../custom_validators/">
+      
+      
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Fastapi Organization</title>
+        <title>Settings Management - Fastapi Organization</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -81,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-fastapi" class="md-skip">
+        <a href="#settings-management" class="md-skip">
           Skip to content
         </a>
       
@@ -97,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../../.." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="assets/logo/favicon.png" alt="logo">
+  <img src="../../../assets/logo/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Fastapi
+              Settings Management
             
           </span>
         </div>
@@ -221,7 +225,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
@@ -241,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="type-hinting/intro/" class="md-tabs__link">
+        <a href="../../../type-hinting/intro/" class="md-tabs__link">
           
   
   
@@ -257,11 +261,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="pydantic/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   
@@ -301,9 +307,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../../.." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="assets/logo/favicon.png" alt="logo">
+  <img src="../../../assets/logo/favicon.png" alt="logo">
 
     </a>
     Fastapi Organization
@@ -361,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   
@@ -427,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="blog/archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -506,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/intro/" class="md-nav__link">
+      <a href="../../../type-hinting/intro/" class="md-nav__link">
         
   
   
@@ -529,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/history/" class="md-nav__link">
+      <a href="../../../type-hinting/history/" class="md-nav__link">
         
   
   
@@ -552,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/typing-module/" class="md-nav__link">
+      <a href="../../../type-hinting/typing-module/" class="md-nav__link">
         
   
   
@@ -616,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/basics/variables/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/variables/" class="md-nav__link">
         
   
   
@@ -639,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/basics/functions/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/functions/" class="md-nav__link">
         
   
   
@@ -662,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/basics/collections/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/collections/" class="md-nav__link">
         
   
   
@@ -734,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/advanced/generics/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/generics/" class="md-nav__link">
         
   
   
@@ -757,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/advanced/type_aliases/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/type_aliases/" class="md-nav__link">
         
   
   
@@ -780,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/advanced/protocols/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/protocols/" class="md-nav__link">
         
   
   
@@ -852,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/examples/real_projects/" class="md-nav__link">
+      <a href="../../../type-hinting/examples/real_projects/" class="md-nav__link">
         
   
   
@@ -875,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/examples/common_pitfalls/" class="md-nav__link">
+      <a href="../../../type-hinting/examples/common_pitfalls/" class="md-nav__link">
         
   
   
@@ -947,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/reference/pep484/" class="md-nav__link">
+      <a href="../../../type-hinting/reference/pep484/" class="md-nav__link">
         
   
   
@@ -970,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="type-hinting/reference/typing_module/" class="md-nav__link">
+      <a href="../../../type-hinting/reference/typing_module/" class="md-nav__link">
         
   
   
@@ -1005,24 +1011,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -1035,7 +1046,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Pydantic
@@ -1049,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   
@@ -1072,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   
@@ -1095,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -1159,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/concepts/models/" class="md-nav__link">
+      <a href="../../concepts/models/" class="md-nav__link">
         
   
   
@@ -1182,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/concepts/fields_and_types/" class="md-nav__link">
+      <a href="../../concepts/fields_and_types/" class="md-nav__link">
         
   
   
@@ -1205,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/concepts/validation/" class="md-nav__link">
+      <a href="../../concepts/validation/" class="md-nav__link">
         
   
   
@@ -1228,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/concepts/serialization/" class="md-nav__link">
+      <a href="../../concepts/serialization/" class="md-nav__link">
         
   
   
@@ -1256,6 +1267,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1266,11 +1279,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1286,7 +1299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Advanced Usage
@@ -1297,10 +1310,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="pydantic/advanced/settings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Settings Management
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1311,6 +1346,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defining-settings-with-basesettings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Settings with BaseSettings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variable-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Variable Support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-env-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using .env Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-environment-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Environment Variable Names
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secrets-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secrets Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-complete-settings-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Complete Settings Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1323,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/advanced/custom_validators/" class="md-nav__link">
+      <a href="../custom_validators/" class="md-nav__link">
         
   
   
@@ -1346,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/advanced/generics/" class="md-nav__link">
+      <a href="../generics/" class="md-nav__link">
         
   
   
@@ -1369,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/advanced/complex_types/" class="md-nav__link">
+      <a href="../complex_types/" class="md-nav__link">
         
   
   
@@ -1441,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/error-handling/validation_errors/" class="md-nav__link">
+      <a href="../../error-handling/validation_errors/" class="md-nav__link">
         
   
   
@@ -1464,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/error-handling/custom_errors/" class="md-nav__link">
+      <a href="../../error-handling/custom_errors/" class="md-nav__link">
         
   
   
@@ -1536,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/integration/fastapi_integration/" class="md-nav__link">
+      <a href="../../integration/fastapi_integration/" class="md-nav__link">
         
   
   
@@ -1559,7 +1695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pydantic/integration/orm_mode/" class="md-nav__link">
+      <a href="../../integration/orm_mode/" class="md-nav__link">
         
   
   
@@ -1617,54 +1753,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status-code" class="md-nav__link">
+  <a href="#defining-settings-with-basesettings" class="md-nav__link">
     <span class="md-ellipsis">
-      Status Code
+      Defining Settings with BaseSettings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-documentation" class="md-nav__link">
+  <a href="#environment-variable-support" class="md-nav__link">
     <span class="md-ellipsis">
-      Automated Documentation
+      Environment Variable Support
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#making-a-website" class="md-nav__link">
+  <a href="#using-env-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Making a Website
+      Using .env Files
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
+  <a href="#customizing-environment-variable-names" class="md-nav__link">
     <span class="md-ellipsis">
-      SERVER
+      Customizing Environment Variable Names
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#farm-stack-fastapi-react-and-mongodb" class="md-nav__link">
+  <a href="#nested-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      FARM Stack - FastAPI, React, and MongoDB
+      Nested Settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#books" class="md-nav__link">
+  <a href="#secrets-management" class="md-nav__link">
     <span class="md-ellipsis">
-      Books
+      Secrets Management
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-complete-settings-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Complete Settings Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -1686,102 +1849,146 @@
 
 
 
-<div><h1 id="welcome-to-fastapi">Welcome to Fastapi</h1>
-<p class="annotate">FastAPI is a modern, fast (high-performance) web framework for building APIs with Python <code>3.6+</code> based on standard Python type hints.(1)</p>
-<ol>
-<li>
-<ul>
-<li>Sebastián Ramírez, creator of FastAPI</li>
-</ul>
-</li>
-</ol>
-<details class="success" open="open">
-<summary>A FastAPI Application</summary>
-<ul>
-<li>The <a href="https://fastapi.tiangolo.com">FastAPI</a> framework: <code>pip install fastapi</code></li>
-<li>The <a href="https://www.uvicorn.org">Uvicorn</a> web server: <code>pip install uvicorn</code></li>
-<li>The <a href="https://httpie.io">HTTPie</a> text web client: <code>pip install httpie</code></li>
-<li>The <a href="https://requests.readthedocs.io">Requests</a> synchronous web client package: <code>pip install requests</code></li>
-<li>The <a href="https://www.python-httpx.org">HTTPX</a> synchronous/asynchronous web client package: <code>pip install httpx</code></li>
-</ul>
-<p>Although <a href="https://curl.se">curl</a> is the best known text web client, I think HTTPie is easier to use. Also, it defaults to JSON encoding and decoding, which is a better match for FastAPI.</p>
-</details>
+<div><h1 id="settings-management">Settings Management</h1>
+<p>Pydantic provides a convenient way to manage application settings and environment variables using the <code>BaseSettings</code> class. This allows you to define configuration models that automatically read from environment variables, <code>.env</code> files, and other sources.</p>
 <hr>
-<p class="annotate"><strong>FastAPI</strong> is <mark>heavily based on</mark> Python <strong>type hints</strong>. So, before diving into the framework, it is useful to review the basic concepts of type hinting, what they are, how they are implemented, and what their purpose is. This foundational knowledge will help you create robust, maintainable, and scalable APIs with FastAPI. (1)</p>
-<ol>
-<li>
-<p>Full Stack FastAPI, React, and MongoDB, Second edition by Marko Aleksendrić, Ph.D.</p>
-<hr>
-<p>By the end of this chapter, you will have a deep understanding of the role of type annotations in Python with FastAPI and Pydantic. Pydantic is a modern Python library that enforces type hints at runtime, provides customizable and user-friendly errors when data is invalid, and allows definition of data structures using Python type annotations.</p>
-<p>You will be able to model your data with precision, leveraging the advanced features of Pydantic to make you a better and more productive FastAPI developer.</p>
-</li>
-</ol>
-<hr>
-<details class="abstract" open="open">
-<summary>Identify the Core 20% of FastAPI</summary>
-<p>FastAPI is a Python framework for building APIs quickly with high performance. The critical 20% of FastAPI to learn includes:</p>
-<ul>
-<li><strong>Routing and Endpoints</strong>: Understand how to define routes using <code>@app.get()</code>, <code>@app.post()</code>, etc.</li>
-<li><strong>Request and Response Handling</strong>: Learn to handle query parameters, path parameters, and JSON request bodies, and return responses with proper status codes.</li>
-<li><strong>Pydantic Models</strong>: Master Pydantic for data validation and serialization.</li>
-<li><strong>Dependency Injection</strong>: Use FastAPI’s dependency system for reusable logic (e.g., authentication, database connections).</li>
-<li><strong>Async/Await</strong>: Grasp asynchronous programming to leverage FastAPI’s performance (e.g., <code>async def</code> for endpoints).</li>
-</ul>
-</details>
-<hr>
-<p><strong>Normal Python execution is synchronous</strong>: one thing at a time, in the order specified by the code. Sometimes we want to be asynchronous: do a little of one thing, then a little of another thing, back to the first thing, and so on. If all our code uses the CPU to calculate things (CPU bound), there’s really no spare time to be asynchronous. But if we perform something that makes the CPU wait for an external thing to complete (I/O bound), we can be asynchronous.</p>
-<p class="annotate"><strong>Asynchronous systems provide an event loop</strong>: requests for slow operations are sent and noted, but we don’t hold up the CPU waiting for their responses. Instead, some immediate processing is done on each pass through the loop, and any responses that came in during that time are handled in the next pass.(1)</p>
-<ol>
-<li>FastAPI - Modern Python Web Development by Bill Lubanovic, pg-8</li>
-</ol>
-<hr>
-<h2 id="status-code">Status Code</h2>
-<p><mark>By default</mark>, FastAPI returns a <code>200</code> status code; exceptions raise <code>4xx</code> codes.</p>
-<hr>
-<h2 id="automated-documentation">Automated Documentation</h2>
-<p>Convince your browser to visit the URL <code>http://localhost:8000/docs</code>.</p>
-<p><strong>Where did that come from?</strong></p>
-<p>FastAPI generates an OpenAPI specification from your code, and includes this page to display and test all your endpoints. This is just one ingredient of its secret sauce.</p>
-<hr>
-<h2 id="making-a-website">Making a Website</h2>
-<p>The full service will have three layers, as I’ve discussed earlier:</p>
-<ul>
-<li><strong>Web</strong> : The web interface</li>
-<li><strong>Service</strong> : The business logic</li>
-<li><strong>Data</strong> : The precious DNA of the whole thing</li>
-</ul>
-<p>Plus the web service will have these cross-layer components:</p>
-<ul>
-<li><strong>Model</strong> : Pydantic data definitions</li>
-<li><strong>Tests</strong> : Unit, integration, and end-to-end tests</li>
-</ul>
-<details class="tip" open="open">
-<summary>Interlude: Top-Down, Bottom-Up, Middle-Out?</summary>
-<p>When designing a website, you could start from one of the following:</p>
-<ul>
-<li>The Web layer and work down</li>
-<li>The Data layer and work up</li>
-<li>The Service layer and work out in both directions</li>
-</ul>
-<p>Do you already have a database, installed and loaded with data, and are just pining for a way to share it with the world? If so, you may want to tackle the Data layer’s code and tests first, then the Service layer, and write the Web layer last.</p>
-<p>If you’re following <a href="#">domain-driven design</a>, you might start in the middle Service layer, defining your core entities and data models. Or you may want to evolve the web interface first, and fake calls to the lower layers until you know what you’ll expect of them.</p>
-</details>
-<hr>
-<h2 id="server">SERVER</h2>
-<p>For FastAPI to run, it needs a <strong>server</strong>. In this case, a server is a software designed to serve web applications (or REST APIs). FastAPI <mark>relies on</mark> the asynchronous server gateway interface (<strong>ASGI</strong>), which enables async non-blocking applications, which is something you can completely use with your FastAPI capabilities.</p>
-<p>At present, the FastAPI documentation lists <mark>three compatible Python ASGI-compatible servers</mark>: <a href="#">Uvicorn</a>, <a href="#">Hypercorn</a>, and <a href="#">Daphne</a>. This book will focus on Uvicorn, the most widely used and recommended option for working with FastAPI. Uvicorn offers high performance, and if you get stuck, there’s extensive documentation available online.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="w"> </span>uvicorn
+<h2 id="defining-settings-with-basesettings">Defining Settings with <code>BaseSettings</code></h2>
+<p>To create a settings model, inherit from <code>pydantic.BaseSettings</code> instead of <code>BaseModel</code>:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">app_name</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">admin_email</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">items_per_user</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">app_name</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">admin_email</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">items_per_user</span><span class="p">)</span>
 </span></code></pre></div>
 <ul>
-<li><a href="#">Full Stack FastAPI, React, and MongoDB, Second edition by Marko Aleksendrić, pg: 73</a></li>
+<li>Fields are defined like in regular Pydantic models.</li>
+<li>Values are loaded from environment variables by default.</li>
+<li>You can provide default values as usual.</li>
 </ul>
 <hr>
-<h2 id="farm-stack-fastapi-react-and-mongodb">FARM Stack - FastAPI, React, and MongoDB</h2>
+<h2 id="environment-variable-support">Environment Variable Support</h2>
+<p><code>BaseSettings</code> automatically reads environment variables matching the field names in uppercase:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">APP_NAME</span><span class="o">=</span><span class="s2">"My Awesome App"</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ADMIN_EMAIL</span><span class="o">=</span><span class="s2">"admin@example.com"</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ITEMS_PER_USER</span><span class="o">=</span><span class="m">100</span>
+</span></code></pre></div>
+<p>Running the above Python code after setting these environment variables will populate the <code>Settings</code> instance accordingly.</p>
 <hr>
-<h2 id="books">Books</h2>
-<p><a class="glightbox" href="https://learning.oreilly.com/library/cover/9781098135492/250w/" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="FastAPI by Bill Lubanovic" src="https://learning.oreilly.com/library/cover/9781098135492/250w/"></a>
-<a class="glightbox" href="https://d2sofvawe08yqg.cloudfront.net/fullstackfastapireactandmongodb-secondedition/s_hero?1735200188" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Full Stack FastAPI, React, and MongoDB, Second edition by Marko Aleksendrić" src="https://d2sofvawe08yqg.cloudfront.net/fullstackfastapireactandmongodb-secondedition/s_hero?1735200188"></a>
-<a class="glightbox" href="https://content.packt.com/_/image/original/B17118/cover_image.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Building Data Science Applications with FastAPI by François Voron" src="https://content.packt.com/_/image/original/B17118/cover_image.jpg" width="300"></a></p></div>
+<h2 id="using-env-files">Using <code>.env</code> Files</h2>
+<p>You can load settings from a <code>.env</code> file by installing the <code>python-dotenv</code> package and placing a <code>.env</code> file in your project:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">APP_NAME</span><span class="o">=</span>My<span class="w"> </span>Env<span class="w"> </span>App
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">ADMIN_EMAIL</span><span class="o">=</span>envadmin@example.com
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">ITEMS_PER_USER</span><span class="o">=</span><span class="m">25</span>
+</span></code></pre></div>
+<p><code>BaseSettings</code> will automatically read from the <code>.env</code> file if present.</p>
+<hr>
+<h2 id="customizing-environment-variable-names">Customizing Environment Variable Names</h2>
+<p>You can customize the environment variable names using <code>Field</code> with the <code>env</code> parameter:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">Field</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">app_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s1">'MY_APP_NAME'</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">admin_email</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s1">'MY_ADMIN_EMAIL'</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Now, <code>MY_APP_NAME</code> and <code>MY_ADMIN_EMAIL</code> environment variables will be used instead.</p>
+<hr>
+<h2 id="nested-settings">Nested Settings</h2>
+<p>You can nest settings models for better organization:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">class</span> <span class="nc">DatabaseSettings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">host</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">port</span><span class="p">:</span> <span class="nb">int</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">app_name</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">database</span><span class="p">:</span> <span class="n">DatabaseSettings</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">()</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">host</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Environment variables for nested models use <code>__</code> (double underscore) as a separator by default:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">DATABASE__HOST</span><span class="o">=</span>localhost
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">DATABASE__PORT</span><span class="o">=</span><span class="m">5432</span>
+</span></code></pre></div>
+<hr>
+<h2 id="secrets-management">Secrets Management</h2>
+<p>You can use Pydantic’s <code>SecretStr</code> and <code>SecretBytes</code> types to handle sensitive data securely:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SecretStr</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="n">db_password</span><span class="p">:</span> <span class="n">SecretStr</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">()</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">db_password</span><span class="p">)</span>  <span class="c1"># Will not print the secret value</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">db_password</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">())</span>  <span class="c1"># To access the actual secret</span>
+</span></code></pre></div>
+<hr>
+<h2 id="example-complete-settings-model">Example: Complete Settings Model</h2>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseSettings</span><span class="p">,</span> <span class="n">SecretStr</span><span class="p">,</span> <span class="n">Field</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">class</span> <span class="nc">Settings</span><span class="p">(</span><span class="n">BaseSettings</span><span class="p">):</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">app_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s1">'APP_NAME'</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">admin_email</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">env</span><span class="o">=</span><span class="s1">'ADMIN_EMAIL'</span><span class="p">)</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">items_per_user</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">db_password</span><span class="p">:</span> <span class="n">SecretStr</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">()</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">app_name</span><span class="p">)</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">admin_email</span><span class="p">)</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">items_per_user</span><span class="p">)</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">settings</span><span class="o">.</span><span class="n">db_password</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">())</span>
+</span></code></pre></div>
+<hr>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BaseSettings</code></td>
+<td>Base class for settings with env var support</td>
+</tr>
+<tr>
+<td>Environment Variables</td>
+<td>Automatically read from env vars</td>
+</tr>
+<tr>
+<td><code>.env</code> File Support</td>
+<td>Load settings from <code>.env</code> files</td>
+</tr>
+<tr>
+<td>Custom Env Variable Names</td>
+<td>Use <code>Field(..., env='VAR_NAME')</code></td>
+</tr>
+<tr>
+<td>Nested Settings</td>
+<td>Support for nested configuration models</td>
+</tr>
+<tr>
+<td>Secrets Management</td>
+<td>Use <code>SecretStr</code> and <code>SecretBytes</code> for secrets</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://pydantic.dev/latest/usage/settings/">Pydantic Settings Documentation</a></li>
+<li><a href="https://pypi.org/project/python-dotenv/">python-dotenv</a></li>
+</ul>
+<hr>
+<p>This document explains how to manage application settings effectively using Pydantic’s <code>BaseSettings</code> for environment variable parsing, <code>.env</code> support, secrets handling, and nested configurations.</p></div>
 
 
 
@@ -1813,6 +2020,44 @@
         <footer class="md-footer">
   
     
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../concepts/serialization/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Serialization and Parsing">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Serialization and Parsing
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../custom_validators/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Validators">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Custom Validators
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1838,10 +2083,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

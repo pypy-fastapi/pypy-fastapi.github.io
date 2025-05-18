@@ -2,34 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pypy-fastapi.github.io/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/blog/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/blog/2024/05/13/understanding-python-annotations-and-type-hints/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/blog/2024/05/13/python-type-hints-vs-typescript-understanding-the-differences-and-similarities/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/installation/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/introduction/</loc>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/pydantic/overview/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
-         <loc>https://pypy-fastapi.github.io/type-hinting/overview/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <loc>https://pypy-fastapi.github.io/pydantic/advanced/complex_types/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/advanced/custom_validators/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/advanced/generics/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/advanced/settings/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/concepts/fields_and_types/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/concepts/models/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/concepts/serialization/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/concepts/validation/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/error-handling/custom_errors/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/error-handling/validation_errors/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/integration/fastapi_integration/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/pydantic/integration/orm_mode/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/history/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/intro/</loc>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/type-hinting/typing-module/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/advanced/generics/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/advanced/protocols/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/advanced/type_aliases/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/basics/collections/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/basics/functions/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/basics/variables/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/examples/common_pitfalls/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/examples/real_projects/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/reference/pep484/</loc>
+         <lastmod>2025-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://pypy-fastapi.github.io/type-hinting/reference/typing_module/</loc>
+         <lastmod>2025-05-18</lastmod>
     </url>
     <url>
          <loc>https://pypy-fastapi.github.io/blog/archive/2024/</loc>
-         <lastmod>2025-05-16</lastmod>
+         <lastmod>2025-05-18</lastmod>
     </url>
 </urlset>

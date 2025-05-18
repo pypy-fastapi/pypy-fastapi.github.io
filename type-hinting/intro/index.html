@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://pypy-fastapi.github.io/blog/">
+        <link rel="canonical" href="https://pypy-fastapi.github.io/type-hinting/intro/">
       
       
+        <link rel="prev" href="../../blog/archive/2024/">
       
-        <link rel="next" href="archive/2024/">
+      
+        <link rel="next" href="../history/">
       
       
-      <link rel="icon" href="../assets/logo/favicon.png">
+      <link rel="icon" href="../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Index - Fastapi Organization</title>
+        <title>Introduction to Type Hints - Fastapi Organization</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -64,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -83,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#introduction-to-type-hints" class="md-skip">
           Skip to content
         </a>
       
@@ -99,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../.." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="../assets/logo/favicon.png" alt="logo">
+  <img src="../../assets/logo/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Introduction to Type Hints
             
           </span>
         </div>
@@ -219,13 +221,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   
@@ -241,11 +241,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../type-hinting/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -265,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../pydantic/overview/" class="md-tabs__link">
+        <a href="../../pydantic/overview/" class="md-tabs__link">
           
   
   
@@ -305,9 +307,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../.." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="../assets/logo/favicon.png" alt="logo">
+  <img src="../../assets/logo/favicon.png" alt="logo">
 
     </a>
     Fastapi Organization
@@ -319,29 +321,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -354,7 +351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -365,34 +362,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Index
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../blog/" class="md-nav__link">
         
   
   
@@ -403,33 +378,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blog
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -485,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/2024/" class="md-nav__link">
+      <a href="../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -520,24 +468,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -550,7 +503,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Type Hints
@@ -561,10 +514,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../type-hinting/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introduction to Type Hints
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -575,6 +550,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-type-hints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Type Hints?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-hints-for-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Hints for Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-checking-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Checking Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -587,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/history/" class="md-nav__link">
+      <a href="../history/" class="md-nav__link">
         
   
   
@@ -610,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/typing-module/" class="md-nav__link">
+      <a href="../typing-module/" class="md-nav__link">
         
   
   
@@ -674,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/variables/" class="md-nav__link">
+      <a href="../basics/variables/" class="md-nav__link">
         
   
   
@@ -697,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/functions/" class="md-nav__link">
+      <a href="../basics/functions/" class="md-nav__link">
         
   
   
@@ -720,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/collections/" class="md-nav__link">
+      <a href="../basics/collections/" class="md-nav__link">
         
   
   
@@ -792,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/generics/" class="md-nav__link">
+      <a href="../advanced/generics/" class="md-nav__link">
         
   
   
@@ -815,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/type_aliases/" class="md-nav__link">
+      <a href="../advanced/type_aliases/" class="md-nav__link">
         
   
   
@@ -838,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/protocols/" class="md-nav__link">
+      <a href="../advanced/protocols/" class="md-nav__link">
         
   
   
@@ -910,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/examples/real_projects/" class="md-nav__link">
+      <a href="../examples/real_projects/" class="md-nav__link">
         
   
   
@@ -933,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/examples/common_pitfalls/" class="md-nav__link">
+      <a href="../examples/common_pitfalls/" class="md-nav__link">
         
   
   
@@ -1005,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/reference/pep484/" class="md-nav__link">
+      <a href="../reference/pep484/" class="md-nav__link">
         
   
   
@@ -1028,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/reference/typing_module/" class="md-nav__link">
+      <a href="../reference/typing_module/" class="md-nav__link">
         
   
   
@@ -1107,7 +1174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/overview/" class="md-nav__link">
+      <a href="../../pydantic/overview/" class="md-nav__link">
         
   
   
@@ -1130,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/introduction/" class="md-nav__link">
+      <a href="../../pydantic/introduction/" class="md-nav__link">
         
   
   
@@ -1153,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/installation/" class="md-nav__link">
+      <a href="../../pydantic/installation/" class="md-nav__link">
         
   
   
@@ -1217,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/models/" class="md-nav__link">
+      <a href="../../pydantic/concepts/models/" class="md-nav__link">
         
   
   
@@ -1240,7 +1307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/fields_and_types/" class="md-nav__link">
+      <a href="../../pydantic/concepts/fields_and_types/" class="md-nav__link">
         
   
   
@@ -1263,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/validation/" class="md-nav__link">
+      <a href="../../pydantic/concepts/validation/" class="md-nav__link">
         
   
   
@@ -1286,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/serialization/" class="md-nav__link">
+      <a href="../../pydantic/concepts/serialization/" class="md-nav__link">
         
   
   
@@ -1358,7 +1425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/settings/" class="md-nav__link">
+      <a href="../../pydantic/advanced/settings/" class="md-nav__link">
         
   
   
@@ -1381,7 +1448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/custom_validators/" class="md-nav__link">
+      <a href="../../pydantic/advanced/custom_validators/" class="md-nav__link">
         
   
   
@@ -1404,7 +1471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/generics/" class="md-nav__link">
+      <a href="../../pydantic/advanced/generics/" class="md-nav__link">
         
   
   
@@ -1427,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/complex_types/" class="md-nav__link">
+      <a href="../../pydantic/advanced/complex_types/" class="md-nav__link">
         
   
   
@@ -1499,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/error-handling/validation_errors/" class="md-nav__link">
+      <a href="../../pydantic/error-handling/validation_errors/" class="md-nav__link">
         
   
   
@@ -1522,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/error-handling/custom_errors/" class="md-nav__link">
+      <a href="../../pydantic/error-handling/custom_errors/" class="md-nav__link">
         
   
   
@@ -1594,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/integration/fastapi_integration/" class="md-nav__link">
+      <a href="../../pydantic/integration/fastapi_integration/" class="md-nav__link">
         
   
   
@@ -1617,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/integration/orm_mode/" class="md-nav__link">
+      <a href="../../pydantic/integration/orm_mode/" class="md-nav__link">
         
   
   
@@ -1665,6 +1732,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1673,9 +1742,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
+  <a href="#why-use-type-hints" class="md-nav__link">
     <span class="md-ellipsis">
-      Blog
+      Why Use Type Hints?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Syntax
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-hints-for-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Hints for Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complex Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-checking-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Checking Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -1690,94 +1822,136 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="blog">Blog</h2>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-13 00:00:00+00:00">May 13, 2024</time></li>
-        
-        
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="introduction-to-type-hints">Introduction to Type Hints</h1>
+<p>Type hints were introduced in Python 3.5 via <a href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a> to provide a standard way of annotating Python code with information about the expected types of variables, function parameters, and return values. They are optional and do not affect the runtime behavior of the program but enable static type checkers, IDEs, and linters to analyze code for potential type errors.</p>
+<hr>
+<h2 id="why-use-type-hints">Why Use Type Hints?</h2>
+<ul>
+<li><strong>Improved Readability:</strong> Makes the code easier to understand by explicitly stating the expected types.</li>
+<li><strong>Early Error Detection:</strong> Helps catch bugs before runtime using static type checkers like <code>mypy</code>.</li>
+<li><strong>Better Tooling:</strong> IDEs can provide better autocompletion, refactoring, and documentation support.</li>
+<li><strong>Documentation:</strong> Serves as a form of documentation for function interfaces and variable types.</li>
+</ul>
+<hr>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>Type hints use annotations with a colon (<code>:</code>) after variable names or function parameters, and an arrow (<code>-&gt;</code>) to indicate the return type.</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">name</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">age</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">25</span>
+</span></code></pre></div>
+<ul>
+<li><code>name: str</code> indicates that <code>name</code> should be a string.</li>
+<li><code>-&gt; str</code> indicates the function returns a string.</li>
+<li><code>age: int</code> declares that <code>age</code> is an integer variable.</li>
+</ul>
+<hr>
+<h2 id="type-hints-for-functions">Type Hints for Functions</h2>
+<p>You can annotate function parameters and return types:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span></code></pre></div>
+<ul>
+<li>Both <code>x</code> and <code>y</code> are expected to be integers.</li>
+<li>The function returns an integer.</li>
+</ul>
+<hr>
+<h2 id="optional-types">Optional Types</h2>
+<p>To indicate a variable or parameter can be of a certain type or <code>None</code>, use <code>Optional</code> from the <code>typing</code> module:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">def</span> <span class="nf">find_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="c1"># Simulated user database</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">users</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>        <span class="mi">1</span><span class="p">:</span> <span class="s2">"Alice"</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="mi">2</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Charlie"</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="c1"># Return the username if found, else None</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="k">return</span> <span class="n">users</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+</span></code></pre></div>
+<p>This means the function returns either a <code>str</code> or <code>None</code>.</p>
+<hr>
+<h2 id="complex-types">Complex Types</h2>
+<p>The <code>typing</code> module provides many generic types to express complex data structures:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Tuple</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">names</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Alice'</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">]</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">scores</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Alice'</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">:</span> <span class="mi">85</span><span class="p">}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">coordinates</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</span></code></pre></div>
+<hr>
+<h2 id="type-checking-tools">Type Checking Tools</h2>
+<p>Type hints are not enforced at runtime but can be checked using tools like:</p>
+<ul>
+<li><a href="http://mypy-lang.org/"><code>mypy</code></a></li>
+<li><a href="https://github.com/microsoft/pyright"><code>pyright</code></a></li>
+<li>IDEs like PyCharm, VSCode, and others provide type hint support.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optional</td>
+<td>Type hints are optional</td>
+</tr>
+<tr>
+<td>Static Analysis</td>
+<td>Tools can catch type errors before runtime</td>
+</tr>
+<tr>
+<td><code>typing</code> Module</td>
+<td>Provides complex and generic type hints</td>
+</tr>
+<tr>
+<td>Improved Readability</td>
+<td>Makes code easier to understand</td>
+</tr>
+<tr>
+<td>Better Tooling</td>
+<td>Enhanced IDE support and autocompletion</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0484/">PEP 484 – Type Hints</a></li>
+<li><a href="https://docs.python.org/3/library/typing.html">Typing - Type Hints</a></li>
+<li><a href="http://mypy-lang.org/">Mypy – Optional Static Typing for Python</a></li>
+</ul>
+<hr>
+<p>This introduction provides a foundation for understanding and using type hints effectively in Python projects.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
           
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="understanding-python-annotations-and-type-hints"><a class="toclink" href="2024/05/13/understanding-python-annotations-and-type-hints/">Understanding Python Annotations and Type Hints</a></h2>
-<p>Python has introduced a powerful feature that helps developers write clearer, more maintainable code: <strong>type annotations</strong>, also known as <strong>type hints</strong>. But are annotations and type hints the same thing? In this post, we'll explore what they are, how they relate, and how you can document your Python projects using MkDocs.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/05/13/understanding-python-annotations-and-type-hints/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-13 00:00:00+00:00">May 13, 2024</time></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python-type-hints-vs-typescript-understanding-the-differences-and-similarities"><a class="toclink" href="2024/05/13/python-type-hints-vs-typescript-understanding-the-differences-and-similarities/">Python Type Hints vs TypeScript: Understanding the Differences and Similarities</a></h2>
-<p>Type hints in Python and TypeScript’s static typing share a common goal: helping developers catch errors before running the code. However, they differ significantly in how they work and what guarantees they provide.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/05/13/python-type-hints-vs-typescript-understanding-the-differences-and-similarities/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
-
-
-
-<nav class="md-pagination">
-  
-</nav>
-        
-      
-    </div>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1796,15 +1970,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../../blog/archive/2024/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2024">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2024
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="archive/2024/" class="md-footer__link md-footer__link--next" aria-label="Next: 2024">
+          <a href="../history/" class="md-footer__link md-footer__link--next" aria-label="Next: History">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                2024
+                History
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1840,10 +2030,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

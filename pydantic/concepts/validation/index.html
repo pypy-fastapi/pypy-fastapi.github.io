@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://pypy-fastapi.github.io/blog/">
+        <link rel="canonical" href="https://pypy-fastapi.github.io/pydantic/concepts/validation/">
       
       
+        <link rel="prev" href="../fields_and_types/">
       
-        <link rel="next" href="archive/2024/">
+      
+        <link rel="next" href="../serialization/">
       
       
-      <link rel="icon" href="../assets/logo/favicon.png">
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Index - Fastapi Organization</title>
+        <title>Validation - Fastapi Organization</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -64,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -83,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#validation" class="md-skip">
           Skip to content
         </a>
       
@@ -99,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../../.." title="Fastapi Organization" class="md-header__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="../assets/logo/favicon.png" alt="logo">
+  <img src="../../../assets/logo/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Validation
             
           </span>
         </div>
@@ -219,13 +221,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
@@ -245,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../type-hinting/intro/" class="md-tabs__link">
+        <a href="../../../type-hinting/intro/" class="md-tabs__link">
           
   
   
@@ -261,11 +261,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../pydantic/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../overview/" class="md-tabs__link">
           
   
   
@@ -305,9 +307,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
+    <a href="../../.." title="Fastapi Organization" class="md-nav__button md-logo" aria-label="Fastapi Organization" data-md-component="logo">
       
-  <img src="../assets/logo/favicon.png" alt="logo">
+  <img src="../../../assets/logo/favicon.png" alt="logo">
 
     </a>
     Fastapi Organization
@@ -319,29 +321,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   
@@ -354,7 +351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Blog
@@ -365,34 +362,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Index
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   
@@ -403,33 +378,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Blog
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -485,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="archive/2024/" class="md-nav__link">
+      <a href="../../../blog/archive/2024/" class="md-nav__link">
         
   
   
@@ -564,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/intro/" class="md-nav__link">
+      <a href="../../../type-hinting/intro/" class="md-nav__link">
         
   
   
@@ -587,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/history/" class="md-nav__link">
+      <a href="../../../type-hinting/history/" class="md-nav__link">
         
   
   
@@ -610,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/typing-module/" class="md-nav__link">
+      <a href="../../../type-hinting/typing-module/" class="md-nav__link">
         
   
   
@@ -674,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/variables/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/variables/" class="md-nav__link">
         
   
   
@@ -697,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/functions/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/functions/" class="md-nav__link">
         
   
   
@@ -720,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/basics/collections/" class="md-nav__link">
+      <a href="../../../type-hinting/basics/collections/" class="md-nav__link">
         
   
   
@@ -792,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/generics/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/generics/" class="md-nav__link">
         
   
   
@@ -815,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/type_aliases/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/type_aliases/" class="md-nav__link">
         
   
   
@@ -838,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/advanced/protocols/" class="md-nav__link">
+      <a href="../../../type-hinting/advanced/protocols/" class="md-nav__link">
         
   
   
@@ -910,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/examples/real_projects/" class="md-nav__link">
+      <a href="../../../type-hinting/examples/real_projects/" class="md-nav__link">
         
   
   
@@ -933,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/examples/common_pitfalls/" class="md-nav__link">
+      <a href="../../../type-hinting/examples/common_pitfalls/" class="md-nav__link">
         
   
   
@@ -1005,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/reference/pep484/" class="md-nav__link">
+      <a href="../../../type-hinting/reference/pep484/" class="md-nav__link">
         
   
   
@@ -1028,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../type-hinting/reference/typing_module/" class="md-nav__link">
+      <a href="../../../type-hinting/reference/typing_module/" class="md-nav__link">
         
   
   
@@ -1063,24 +1011,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -1093,7 +1046,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Pydantic
@@ -1107,7 +1060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/overview/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
         
   
   
@@ -1130,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/introduction/" class="md-nav__link">
+      <a href="../../introduction/" class="md-nav__link">
         
   
   
@@ -1153,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         
   
   
@@ -1173,6 +1126,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1183,11 +1138,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
@@ -1203,7 +1158,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Core Concepts
@@ -1217,7 +1172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/models/" class="md-nav__link">
+      <a href="../models/" class="md-nav__link">
         
   
   
@@ -1240,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/fields_and_types/" class="md-nav__link">
+      <a href="../fields_and_types/" class="md-nav__link">
         
   
   
@@ -1260,10 +1215,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../pydantic/concepts/validation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Validation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1274,6 +1251,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validationerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      ValidationError
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Validators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#root-validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Validators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1286,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/concepts/serialization/" class="md-nav__link">
+      <a href="../serialization/" class="md-nav__link">
         
   
   
@@ -1358,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/settings/" class="md-nav__link">
+      <a href="../../advanced/settings/" class="md-nav__link">
         
   
   
@@ -1381,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/custom_validators/" class="md-nav__link">
+      <a href="../../advanced/custom_validators/" class="md-nav__link">
         
   
   
@@ -1404,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/generics/" class="md-nav__link">
+      <a href="../../advanced/generics/" class="md-nav__link">
         
   
   
@@ -1427,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/advanced/complex_types/" class="md-nav__link">
+      <a href="../../advanced/complex_types/" class="md-nav__link">
         
   
   
@@ -1499,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/error-handling/validation_errors/" class="md-nav__link">
+      <a href="../../error-handling/validation_errors/" class="md-nav__link">
         
   
   
@@ -1522,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/error-handling/custom_errors/" class="md-nav__link">
+      <a href="../../error-handling/custom_errors/" class="md-nav__link">
         
   
   
@@ -1594,7 +1654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/integration/fastapi_integration/" class="md-nav__link">
+      <a href="../../integration/fastapi_integration/" class="md-nav__link">
         
   
   
@@ -1617,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pydantic/integration/orm_mode/" class="md-nav__link">
+      <a href="../../integration/orm_mode/" class="md-nav__link">
         
   
   
@@ -1665,6 +1725,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1673,9 +1735,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blog" class="md-nav__link">
+  <a href="#basic-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Blog
+      Basic Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validationerror" class="md-nav__link">
+    <span class="md-ellipsis">
+      ValidationError
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Validators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#root-validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Validators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -1690,94 +1806,167 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h2 id="blog">Blog</h2>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-13 00:00:00+00:00">May 13, 2024</time></li>
-        
-        
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="validation">Validation</h1>
+<p>Pydantic provides powerful validation capabilities that ensure the data conforms to the expected types and constraints. Validation happens automatically when creating model instances.</p>
+<hr>
+<h2 id="basic-validation">Basic Validation</h2>
+<p>When you create a Pydantic model instance, it validates the input data against the declared types:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Valid input</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Alice'</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Invalid input raises ValidationError</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">'abc'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>The first instance is valid and prints the user.</li>
+<li>The second instance raises a <code>ValidationError</code> because <code>id</code> should be an integer and <code>name</code> should be a string.</li>
+</ul>
+<hr>
+<h2 id="validationerror">ValidationError</h2>
+<p>When validation fails, Pydantic raises a <code>ValidationError</code> that contains detailed information about all errors:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">ValidationError</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">'abc'</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</span></code></pre></div>
+<p>The error output includes the location, error type, and message for each invalid field.</p>
+<hr>
+<h2 id="custom-validators">Custom Validators</h2>
+<p>You can define custom validation logic using the <code>@validator</code> decorator:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">validator</span><span class="p">,</span> <span class="n">ValidationError</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="nd">@validator</span><span class="p">(</span><span class="s1">'name'</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">def</span> <span class="nf">name_must_be_capitalized</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">v</span><span class="o">.</span><span class="n">istitle</span><span class="p">():</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'name must be capitalized'</span><span class="p">)</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="k">return</span> <span class="n">v</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'alice'</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>The validator checks that the <code>name</code> field is capitalized.</li>
+<li>If not, it raises a <code>ValueError</code> which Pydantic includes in the validation errors.</li>
+</ul>
+<hr>
+<h2 id="field-constraints">Field Constraints</h2>
+<p>Pydantic provides built-in field constraints using <code>Field</code>:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">class</span> <span class="nc">Product</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">gt</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li><code>gt=0</code> means the value must be greater than 0.</li>
+<li><code>ge=0.0</code> means the value must be greater than or equal to 0.0.</li>
+</ul>
+<hr>
+<h2 id="root-validators">Root Validators</h2>
+<p>For validation that depends on multiple fields, use <code>@root_validator</code>:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">root_validator</span><span class="p">,</span> <span class="n">ValidationError</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">password</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">password_confirm</span><span class="p">:</span> <span class="nb">str</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nd">@root_validator</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="k">def</span> <span class="nf">passwords_match</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>        <span class="n">pw</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'password'</span><span class="p">)</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>        <span class="n">pw_confirm</span> <span class="o">=</span> <span class="n">values</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'password_confirm'</span><span class="p">)</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="k">if</span> <span class="n">pw</span> <span class="o">!=</span> <span class="n">pw_confirm</span><span class="p">:</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'passwords do not match'</span><span class="p">)</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>        <span class="k">return</span> <span class="n">values</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">password</span><span class="o">=</span><span class="s1">'secret'</span><span class="p">,</span> <span class="n">password_confirm</span><span class="o">=</span><span class="s1">'notsecret'</span><span class="p">)</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>This validator ensures the two password fields match.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatic Validation</td>
+<td>Validates data on model instantiation</td>
+</tr>
+<tr>
+<td>ValidationError</td>
+<td>Detailed error reporting for invalid data</td>
+</tr>
+<tr>
+<td>Custom Validators</td>
+<td>Define field-specific validation logic</td>
+</tr>
+<tr>
+<td>Field Constraints</td>
+<td>Use <code>Field</code> to enforce value restrictions</td>
+</tr>
+<tr>
+<td>Root Validators</td>
+<td>Validate multiple fields together</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://pydantic.dev/latest/usage/validators/">Pydantic Validation Documentation</a></li>
+<li><a href="https://pydantic.dev/latest/usage/models/#error-handling">Pydantic Error Handling</a></li>
+</ul>
+<hr>
+<p>This document explains how Pydantic validates data and how to customize validation logic for robust data models.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
           
-          <li class="md-meta__item">
-            
-              2 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="understanding-python-annotations-and-type-hints"><a class="toclink" href="2024/05/13/understanding-python-annotations-and-type-hints/">Understanding Python Annotations and Type Hints</a></h2>
-<p>Python has introduced a powerful feature that helps developers write clearer, more maintainable code: <strong>type annotations</strong>, also known as <strong>type hints</strong>. But are annotations and type hints the same thing? In this post, we'll explore what they are, how they relate, and how you can document your Python projects using MkDocs.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/05/13/understanding-python-annotations-and-type-hints/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-05-13 00:00:00+00:00">May 13, 2024</time></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python-type-hints-vs-typescript-understanding-the-differences-and-similarities"><a class="toclink" href="2024/05/13/python-type-hints-vs-typescript-understanding-the-differences-and-similarities/">Python Type Hints vs TypeScript: Understanding the Differences and Similarities</a></h2>
-<p>Type hints in Python and TypeScript’s static typing share a common goal: helping developers catch errors before running the code. However, they differ significantly in how they work and what guarantees they provide.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="2024/05/13/python-type-hints-vs-typescript-understanding-the-differences-and-similarities/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
-
-
-
-<nav class="md-pagination">
-  
-</nav>
-        
-      
-    </div>
-  </div>
-
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -1796,15 +1985,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../fields_and_types/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fields and Types">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Fields and Types
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="archive/2024/" class="md-footer__link md-footer__link--next" aria-label="Next: 2024">
+          <a href="../serialization/" class="md-footer__link md-footer__link--next" aria-label="Next: Serialization and Parsing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                2024
+                Serialization and Parsing
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1840,10 +2045,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
