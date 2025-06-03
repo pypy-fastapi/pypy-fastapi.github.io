@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-fastapi" class="md-skip">
+        <a href="#home" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Fastapi
+              Home
             
           </span>
         </div>
@@ -341,7 +341,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="FastAPI/installation/" class="md-tabs__link">
+        <a href="FastAPI/overview/" class="md-tabs__link">
           
   
   
@@ -2090,6 +2090,29 @@
   
   
     <li class="md-nav__item">
+      <a href="FastAPI/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="FastAPI/installation/" class="md-nav__link">
         
   
@@ -2185,51 +2208,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#status-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Status Code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automated-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Automated Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#making-a-website" class="md-nav__link">
-    <span class="md-ellipsis">
-      Making a Website
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    <span class="md-ellipsis">
-      SERVER
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#farm-stack-fastapi-react-and-mongodb" class="md-nav__link">
-    <span class="md-ellipsis">
-      FARM Stack - FastAPI, React, and MongoDB
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#books" class="md-nav__link">
     <span class="md-ellipsis">
       Books
@@ -2254,97 +2232,7 @@
 
 
 
-<div><h1 id="welcome-to-fastapi">Welcome to Fastapi</h1>
-<p class="annotate">FastAPI is a modern, fast (high-performance) web framework for building APIs with Python <code>3.6+</code> based on standard Python type hints.(1)</p>
-<ol>
-<li>
-<ul>
-<li>Sebastián Ramírez, creator of FastAPI</li>
-</ul>
-</li>
-</ol>
-<details class="success" open="open">
-<summary>A FastAPI Application</summary>
-<ul>
-<li>The <a href="https://fastapi.tiangolo.com">FastAPI</a> framework: <code>pip install fastapi</code></li>
-<li>The <a href="https://www.uvicorn.org">Uvicorn</a> web server: <code>pip install uvicorn</code></li>
-<li>The <a href="https://httpie.io">HTTPie</a> text web client: <code>pip install httpie</code></li>
-<li>The <a href="https://requests.readthedocs.io">Requests</a> synchronous web client package: <code>pip install requests</code></li>
-<li>The <a href="https://www.python-httpx.org">HTTPX</a> synchronous/asynchronous web client package: <code>pip install httpx</code></li>
-</ul>
-<p>Although <a href="https://curl.se">curl</a> is the best known text web client, I think HTTPie is easier to use. Also, it defaults to JSON encoding and decoding, which is a better match for FastAPI.</p>
-</details>
-<hr>
-<p class="annotate"><strong>FastAPI</strong> is <mark>heavily based on</mark> Python <strong>type hints</strong>. So, before diving into the framework, it is useful to review the basic concepts of type hinting, what they are, how they are implemented, and what their purpose is. This foundational knowledge will help you create robust, maintainable, and scalable APIs with FastAPI. (1)</p>
-<ol>
-<li>
-<p>Full Stack FastAPI, React, and MongoDB, Second edition by Marko Aleksendrić, Ph.D.</p>
-<hr>
-<p>By the end of this chapter, you will have a deep understanding of the role of type annotations in Python with FastAPI and Pydantic. Pydantic is a modern Python library that enforces type hints at runtime, provides customizable and user-friendly errors when data is invalid, and allows definition of data structures using Python type annotations.</p>
-<p>You will be able to model your data with precision, leveraging the advanced features of Pydantic to make you a better and more productive FastAPI developer.</p>
-</li>
-</ol>
-<hr>
-<details class="abstract" open="open">
-<summary>Identify the Core 20% of FastAPI</summary>
-<p>FastAPI is a Python framework for building APIs quickly with high performance. The critical 20% of FastAPI to learn includes:</p>
-<ul>
-<li><strong>Routing and Endpoints</strong>: Understand how to define routes using <code>@app.get()</code>, <code>@app.post()</code>, etc.</li>
-<li><strong>Request and Response Handling</strong>: Learn to handle query parameters, path parameters, and JSON request bodies, and return responses with proper status codes.</li>
-<li><strong>Pydantic Models</strong>: Master Pydantic for data validation and serialization.</li>
-<li><strong>Dependency Injection</strong>: Use FastAPI’s dependency system for reusable logic (e.g., authentication, database connections).</li>
-<li><strong>Async/Await</strong>: Grasp asynchronous programming to leverage FastAPI’s performance (e.g., <code>async def</code> for endpoints).</li>
-</ul>
-</details>
-<hr>
-<p><strong>Normal Python execution is synchronous</strong>: one thing at a time, in the order specified by the code. Sometimes we want to be asynchronous: do a little of one thing, then a little of another thing, back to the first thing, and so on. If all our code uses the CPU to calculate things (CPU bound), there’s really no spare time to be asynchronous. But if we perform something that makes the CPU wait for an external thing to complete (I/O bound), we can be asynchronous.</p>
-<p class="annotate"><strong>Asynchronous systems provide an event loop</strong>: requests for slow operations are sent and noted, but we don’t hold up the CPU waiting for their responses. Instead, some immediate processing is done on each pass through the loop, and any responses that came in during that time are handled in the next pass.(1)</p>
-<ol>
-<li>FastAPI - Modern Python Web Development by Bill Lubanovic, pg-8</li>
-</ol>
-<hr>
-<h2 id="status-code">Status Code</h2>
-<p><mark>By default</mark>, FastAPI returns a <code>200</code> status code; exceptions raise <code>4xx</code> codes.</p>
-<hr>
-<h2 id="automated-documentation">Automated Documentation</h2>
-<p>Convince your browser to visit the URL <code>http://localhost:8000/docs</code>.</p>
-<p><strong>Where did that come from?</strong></p>
-<p>FastAPI generates an OpenAPI specification from your code, and includes this page to display and test all your endpoints. This is just one ingredient of its secret sauce.</p>
-<hr>
-<h2 id="making-a-website">Making a Website</h2>
-<p>The full service will have three layers, as I’ve discussed earlier:</p>
-<ul>
-<li><strong>Web</strong> : The web interface</li>
-<li><strong>Service</strong> : The business logic</li>
-<li><strong>Data</strong> : The precious DNA of the whole thing</li>
-</ul>
-<p>Plus the web service will have these cross-layer components:</p>
-<ul>
-<li><strong>Model</strong> : Pydantic data definitions</li>
-<li><strong>Tests</strong> : Unit, integration, and end-to-end tests</li>
-</ul>
-<details class="tip" open="open">
-<summary>Interlude: Top-Down, Bottom-Up, Middle-Out?</summary>
-<p>When designing a website, you could start from one of the following:</p>
-<ul>
-<li>The Web layer and work down</li>
-<li>The Data layer and work up</li>
-<li>The Service layer and work out in both directions</li>
-</ul>
-<p>Do you already have a database, installed and loaded with data, and are just pining for a way to share it with the world? If so, you may want to tackle the Data layer’s code and tests first, then the Service layer, and write the Web layer last.</p>
-<p>If you’re following <a href="#">domain-driven design</a>, you might start in the middle Service layer, defining your core entities and data models. Or you may want to evolve the web interface first, and fake calls to the lower layers until you know what you’ll expect of them.</p>
-</details>
-<hr>
-<h2 id="server">SERVER</h2>
-<p>For FastAPI to run, it needs a <strong>server</strong>. In this case, a server is a software designed to serve web applications (or REST APIs). FastAPI <mark>relies on</mark> the asynchronous server gateway interface (<strong>ASGI</strong>), which enables async non-blocking applications, which is something you can completely use with your FastAPI capabilities.</p>
-<p>At present, the FastAPI documentation lists <mark>three compatible Python ASGI-compatible servers</mark>: <a href="#">Uvicorn</a>, <a href="#">Hypercorn</a>, and <a href="#">Daphne</a>. This book will focus on Uvicorn, the most widely used and recommended option for working with FastAPI. Uvicorn offers high performance, and if you get stuck, there’s extensive documentation available online.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi<span class="w"> </span>uvicorn
-</span></code></pre></div>
-<ul>
-<li><a href="#">Full Stack FastAPI, React, and MongoDB, Second edition by Marko Aleksendrić, pg: 73</a></li>
-</ul>
-<hr>
-<h2 id="farm-stack-fastapi-react-and-mongodb">FARM Stack - FastAPI, React, and MongoDB</h2>
+<div><h1 id="home">Home</h1>
 <hr>
 <h2 id="books">Books</h2>
 <p><a class="glightbox" href="https://learning.oreilly.com/library/cover/9781098135492/250w/" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="FastAPI by Bill Lubanovic" src="https://learning.oreilly.com/library/cover/9781098135492/250w/"></a>
