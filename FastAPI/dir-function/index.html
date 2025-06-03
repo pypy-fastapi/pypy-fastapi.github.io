@@ -2277,6 +2277,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#import-in-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import in FastAPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import in FastAPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intended-for-public-use-safe-to-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Intended for Public Use (Safe to Import)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessible-but-not-meant-for-public-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Accessible but Not Meant for Public Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-should-not-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ You Should Not Import
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2422,6 +2473,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#import-in-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import in FastAPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import in FastAPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intended-for-public-use-safe-to-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Intended for Public Use (Safe to Import)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessible-but-not-meant-for-public-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Accessible but Not Meant for Public Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-should-not-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ You Should Not Import
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2552,6 +2654,66 @@
 <tr>
 <td>Built-ins/Metadata</td>
 <td><code>__version__</code>, <code>__doc__</code>, <code>__name__</code>, etc.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="import-in-fastapi">Import in FastAPI</h2>
+<p>The result of <code>dir(fastapi)</code> lists <strong>all attributes (modules, classes, functions, variables, etc.)</strong> that are accessible directly from the <code>fastapi</code> package.</p>
+<p>But <mark>not all of them are meant to be imported directly with</mark> <code>from fastapi import &lt;name&gt;</code> — only the public API.</p>
+<hr>
+<h3 id="intended-for-public-use-safe-to-import">✅ Intended for Public Use (Safe to Import)</h3>
+<p>These are public APIs explicitly exposed for use and documented. Examples:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">APIRouter</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">Response</span><span class="p">,</span> <span class="n">Depends</span><span class="p">,</span> <span class="n">HTTPException</span>
+</span></code></pre></div>
+<p>These are intended for you to use and are safe to import.</p>
+<hr>
+<h3 id="accessible-but-not-meant-for-public-use">⚠️ Accessible but Not Meant for Public Use</h3>
+<p>These are things that you can technically import, but they're meant for internal use and might:</p>
+<ul>
+<li>Change without notice</li>
+<li>Break compatibility</li>
+</ul>
+<p>Examples:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">_utils</span><span class="p">,</span> <span class="n">routing</span><span class="p">,</span> <span class="n">params</span>  <span class="c1"># Underscore or undocumented = internal</span>
+</span></code></pre></div>
+<p>FastAPI does not strictly hide internal elements via <code>__all__</code>, so they’re importable, but not part of the stable public API.</p>
+<hr>
+<h3 id="you-should-not-import">❌ You Should Not Import</h3>
+<p>Avoid importing:</p>
+<ul>
+<li>Any name starting with <code>_</code> (e.g., <code>_some_internal_thing</code>)</li>
+<li>Undocumented or low-level utilities unless you're debugging or contributing to FastAPI</li>
+</ul>
+<hr>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Can Import?</th>
+<th>Should Import?</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ Yes</td>
+<td>✅ Yes</td>
+<td>Public API (e.g. <code>FastAPI</code>, <code>APIRouter</code>)</td>
+<td>Documented and stable</td>
+</tr>
+<tr>
+<td>✅ Yes</td>
+<td>⚠️ No</td>
+<td>Internal APIs (e.g. <code>_utils</code>, <code>routing</code>)</td>
+<td>May break or change without warning</td>
+</tr>
+<tr>
+<td>❌ No</td>
+<td>❌ No</td>
+<td>Not listed in <code>dir(fastapi)</code></td>
+<td>Not accessible at all</td>
 </tr>
 </tbody>
 </table></div>
